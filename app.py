@@ -52,7 +52,7 @@ def main():
             if transcript['text']:
                 # Convert text to speech
                 sound_file = BytesIO()
-                tts = gTTS(transcript['text'], lang='en')
+                tts = gTTS(transcript['text'], lang='id')
                 tts.write_to_fp(sound_file)
                 st.markdown("***Synthesized Speech Translation***")
                 st.audio(sound_file)
